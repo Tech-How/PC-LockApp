@@ -14,6 +14,6 @@ When LockApp starts, it opens supervising processes in the background, which are
 This is mainly just a hobby project, and if someone was really determined, there are ways around this. Don't open a super confidential document, and then run this and walk away thinking it will be impossible to access. That being said, if you do find a way around it that you think is easy enough for people to figure out, feel free to leave a issue report and I'll take a look. There's a nice self-installing EXE under the releases tab.
 ## Credits
 This program uses files from other projects, which are listed here:
-- [BAT2EXE - Batch to EXE Converter](https://github.com/islamadel/bat2exe)
+- [BAT2EXE - Batch to EXE Converter](https://bat2exe.net)
 - [NirCmd - Windows Command-line Utility](https://www.nirsoft.net/utils/nircmd.html)
 - [Fart - Find and Replace Text](http://fart-it.sourceforge.net/)
