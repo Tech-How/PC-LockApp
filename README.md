@@ -1,5 +1,7 @@
 # PC LockApp
 An alternative to the Windows+L shortcut.
+
+**[Download](https://github.com/Tech-How/PC-LockApp/releases)**
 ## Why?
 This was originally created as a solution for programs I used that got interrupted by the Windows LockApp process. When you lock the computer with the Windows+L shortcut, or from the start menu, LockApp.exe starts and some processes running at the user-level are put into a suspension-like sate. (Razer Synapse, for example.) When waking your PC from the lock screen, these programs can become glitched or behave improperly. I made this so that you can still hide your computer screen, but without pausing foreground programs.
 ## How?
