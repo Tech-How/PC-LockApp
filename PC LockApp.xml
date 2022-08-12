@@ -3,6 +3,7 @@
   <RegistrationInfo>
     <Date>2022-08-11T13:04:14.2526472</Date>
     <Author>Tech How</Author>
+    <Description>Permits execution of the LockApp program without triggering a UAC prompt. You can set this to run on a schedule, but it won't be by default.</Description>
     <URI>\PC LockApp</URI>
   </RegistrationInfo>
   <Triggers />
