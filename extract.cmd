@@ -21,6 +21,8 @@ copy mlock.cmd "%localappdata%\PC LockApp\bin" >nul
 copy topmost.cmd "%localappdata%\PC LockApp\bin" >nul
 copy "PC LockApp.xml" "%localappdata%\PC LockApp\bin" >nul
 copy "PC LockApp Non-Admin.xml" "%localappdata%\PC LockApp\bin" >nul
+copy version.txt "%localappdata%\PC LockApp\bin" >nul
+copy CREDITS.txt "%localappdata%\PC LockApp\bin" >nul
 copy nircmd.exe "%localappdata%\PC LockApp\bin\exedata" >nul
 FOR /F "usebackq delims=" %%i in (`cscript "%localappdata%\PC LockApp\findDesktop.vbs"`) DO SET DESKTOPDIR=%%i >nul
 echo.%desktopdir%|findstr /C:"OneDrive" >nul 2>&1 && set "desktopdir=%userprofile%\onedrive\desktop" || set "desktopdir=%userprofile%\desktop"
@@ -34,10 +36,10 @@ cls
 echo Uninstalling...
 echo.
 echo.
-rmdir /s /q "%localappdata%\PC LockApp" >nul
-rmdir /s /q "C:\ProgramData\PC LockApp" >nul
-del /q "%desktopdir%\PC LockApp.lnk" >nul
-schtasks /delete /f /TN "PC LockApp" >nul
+rmdir /s /q "%localappdata%\PC LockApp" >nul 2>&1
+rmdir /s /q "C:\ProgramData\PC LockApp" >nul 2>&1
+del /q "%desktopdir%\PC LockApp.lnk" >nul 2>&1
+schtasks /delete /f /TN "PC LockApp" >nul 2>&1
 echo Uninstall complete.
 timeout -1 >nul
 exit
