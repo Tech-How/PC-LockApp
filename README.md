@@ -11,7 +11,7 @@ This tool operates in a sort-of clever way. It's written in batch, and uses a ma
 
 When LockApp starts, it opens supervising processes in the background, which are able to tell if the LockApp window is modified. This is how it can detect if the window is closed and restart it. When the correct password is entered, the batch file sends a call to the other supervising processes to queue them to stop. But if the window is killed or closed improperly, it starts right back up. And if the wrong password is entered, the attempts are logged for you to see when you return.
 ## Other Info
-This is mainly just a hobby project, and if someone was really determined, there are ways around this. Don't open a super confidential document, and then run this and think it will be impossible to access. That being said, if you do find a way around it that you think is easy enough for people to figure out, feel free to leave a issue report and I'll take a look. There's a nice self-installing EXE under the releases tab.
+This is mainly just a hobby project, and if someone was really determined, there are ways around this. Don't open a super confidential document, and then run this and walk away thinking it will be impossible to access. That being said, if you do find a way around it that you think is easy enough for people to figure out, feel free to leave a issue report and I'll take a look. There's a nice self-installing EXE under the releases tab.
 ## Credits
 This program uses files from other projects, which are listed here:
 - [BAT2EXE - Batch to EXE Converter](https://github.com/islamadel/bat2exe)
