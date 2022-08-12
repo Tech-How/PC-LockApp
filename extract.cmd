@@ -8,6 +8,7 @@ timeout 1 >nul
 if exist "%localappdata%\PC LockApp" goto alreadyinstalled
 cls
 echo Extracting...
+:repair2
 ren lock.packedicon lock.ico
 md "%localappdata%\PC LockApp\bin\exedata"
 copy lock.ico "%localappdata%\PC LockApp\bin\exedata" >nul
@@ -39,7 +40,14 @@ echo.
 rmdir /s /q "%localappdata%\PC LockApp" >nul 2>&1
 rmdir /s /q "C:\ProgramData\PC LockApp" >nul 2>&1
 del /q "%desktopdir%\PC LockApp.lnk" >nul 2>&1
+set errorlevel=0
 schtasks /delete /f /TN "PC LockApp" >nul 2>&1
+if errorlevel 1 goto repair1
 echo Uninstall complete.
 timeout -1 >nul
 exit
+
+:repair1
+cls
+echo Repairing...
+goto repair2
