@@ -38,7 +38,6 @@ cls
 echo Installing...
 "%localappdata%\PC LockApp\bin\fart.exe" "%localappdata%\PC LockApp\bin\PC LockApp.xml" "XMLUSRSTRING" "%username%" >nul
 "%localappdata%\PC LockApp\bin\fart.exe" "%localappdata%\PC LockApp\bin\PC LockApp.xml" "XMLPROGSTRING" "%localappdata%\PC LockApp\lockapp2.exe" >nul
-timeout 3 /nobreak >nul
 "%localappdata%\PC LockApp\bin\fart.exe" "%localappdata%\PC LockApp\bin\exedata\lockapp2.cmd" "USERNAMESTRING" "%USERNAMESTRING%" >nul
 "%localappdata%\PC LockApp\bin\fart.exe" "%localappdata%\PC LockApp\bin\exedata\lockapp2.cmd" "PASSWORDSTRING" "%PASSWORDSTRING%" >nul
 set errorlevel=0
