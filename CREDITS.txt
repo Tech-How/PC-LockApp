@@ -1,0 +1,4 @@
+This program uses files from other projects, which are listed here:
+- [BAT2EXE - Batch to EXE Converter](https://bat2exe.net)
+- [NirCmd - Windows Command-line Utility](https://www.nirsoft.net/utils/nircmd.html)
+- [Fart - Find and Replace Text](http://fart-it.sourceforge.net/)
