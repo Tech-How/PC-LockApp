@@ -1,7 +1,7 @@
 # PC LockApp
 An alternative to the Windows+L shortcut.
 ## Why?
-This was originally created as a solution for programs I used that got interrupted by the Windows LockApp process. When you lock the computer with the Windows+L shortcut, or from the start menu, LockApp.exe starts and some processes running at the user-level are put into a suspension-like sate. (Razer Synapse, for example.) When waking your PC from the lock screen, these programs can become glitched or behave improperly. I made this so you can still hide your computer screen, but without pausing foreground programs.
+This was originally created as a solution for programs I used that got interrupted by the Windows LockApp process. When you lock the computer with the Windows+L shortcut, or from the start menu, LockApp.exe starts and some processes running at the user-level are put into a suspension-like sate. (Razer Synapse, for example.) When waking your PC from the lock screen, these programs can become glitched or behave improperly. I made this so that you can still hide your computer screen, but without pausing foreground programs.
 ## How?
 This tool operates in a sort-of clever way. It's written in batch, and uses a maximized command window to block access to your computer. But can't someone just minimize, or click off the window? Or close it? Here are the safeguards put in place to prevent just that:
 - Your mouse is locked: Only the keyboard can be accessed.
